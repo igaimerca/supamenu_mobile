@@ -70,4 +70,67 @@ const restaurantsData = [
     email: "info@thebistro.kig",
   },
 ];
-export default restaurantsData;
+
+const menuOptionsData = [
+  {
+    restaurant: { id: 1, name: "Le Panorama" },
+    category: { id: 1, name: "Appetizer" },
+    items: [
+      {
+        name: "Pizza",
+        amount: 2,
+        unitPrice: 3000,
+        description: "Lorem ipsumn isut etiec sumpex",
+      }
+    ],
+  },
+  {
+    restaurant: { id: 1, name: "Le Panorama" },
+    category: { id: 2, name: "Starter" },
+    items: [
+      {
+        name: "Pizza",
+        amount: 2,
+        unitPrice: 3000,
+        description: "Lorem ipsumn isut etiec sumpex",
+      }
+    ],
+  },
+  {
+    restaurant: { id: 1, name: "Le Panorama" },
+    category: { id: 3, name: "Main" },
+    items: [
+      {
+        name: "Pizza",
+        amount: 2,
+        unitPrice: 3000,
+        description: "Lorem ipsumn isut etiec sumpex",
+      }
+    ],
+  },
+  {
+    restaurant: { id: 1, name: "Le Panorama" },
+    category: { id: 4, name: "Dessert" },
+    items: [
+      {
+        name: "Pizza",
+        amount: 2,
+        unitPrice: 3000,
+        description: "Lorem ipsumn isut etiec sumpex",
+      }
+    ],
+  },
+  {
+    restaurant: { id: 1, name: "Le Panorama" },
+    category: { id: 5, name: "Drink" },
+    items: [
+      {
+        name: "Pizza",
+        amount: 2,
+        unitPrice: 3000,
+        description: "Lorem ipsumn isut etiec sumpex",
+      }
+    ],
+  },
+];
+export { restaurantsData, menuOptionsData };

@@ -8,7 +8,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import colors from '../util/colors';
-import restaurantsData from '../../assets/data/Restaurants';
+import {restaurantsData} from '../../assets/data/Restaurants';
 
 const Restaurant = ({ navigation }) => {
 

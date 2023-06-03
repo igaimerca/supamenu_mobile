@@ -69,9 +69,9 @@ export default function RestaurantMenuCart({ navigation, route }) {
         <Text style={styles.subheaderText}>{menu.category?.name}</Text>
 
         <View style={styles.productsContainer}>
-          {products.map((product) => {
+          {products.map((product, idx) => {
             return (
-              <View key={product.id} style={styles.product}>
+              <View key={idx} style={styles.product}>
                 <View></View>
                 <View>
                   <Text style={styles.productName}>{product.name}</Text>
@@ -132,7 +132,7 @@ export default function RestaurantMenuCart({ navigation, route }) {
         </View>
 
         <TouchableWithoutFeedback
-          onPress={() => navigation.navigate("Checkout", { products })}
+          onPress={() => navigation.navigate("CheckoutScreen", { screen: 'Checkout', products: products })}
         >
           <View
             style={{
@@ -193,7 +193,6 @@ const styles = StyleSheet.create({
   },
   productAuthor: {
     color: "black",
-    fontWeight: "bold",
     marginVertical: 8,
   },
   productName: {

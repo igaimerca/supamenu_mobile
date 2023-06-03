@@ -11,7 +11,7 @@ import SignUp from '../../screens/SignUp';
 import DashboardScreen from '../../screens/Dashboard';
 import NotificationScreen from '../../screens/Notification';
 import ShoppingCartScreen from '../../screens/ShoppingCart';
-import { SearchStack } from '../../stacks';
+import { CheckoutStack, SearchStack } from '../../stacks';
 import { useEffect, useState } from 'react';
 import * as SecureStore from 'expo-secure-store';
 import { NavigationContainer } from '@react-navigation/native';
@@ -114,8 +114,8 @@ function HomeScreen() {
                         <AntDesign name="shoppingcart" size={24} color={color} />
                     ),
                 }}
-                name="Cart"
-                component={ShoppingCartScreen}
+            name="CheckoutScreen"
+            component={CheckoutStack}
             />
         </Tab.Navigator>
     );

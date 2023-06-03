@@ -11,25 +11,26 @@ import {
 import Icon from "react-native-vector-icons/FontAwesome";
 import colors from "../util/colors";
 import * as SecureStore from "expo-secure-store";
+import { menuOptionsData } from '../../assets/data/Restaurants';
 
 let height = Dimensions.get("window").height;
 let width = Dimensions.get("window").width;
 
 export default function RestaurantMenu({ navigation, route }) {
-  const [token, settoken] = useState("");
+  const [token, setToken] = useState("");
 
   useEffect(() => {
     async function getToken() {
       const tokenFromSecureStore = await SecureStore.getItemAsync("token");
       if (tokenFromSecureStore) {
-        settoken(JSON.parse(tokenFromSecureStore).accessToken);
+        setToken(JSON.parse(tokenFromSecureStore).accessToken);
       }
     }
     getToken();
   }, []);
 
   const { restaurant } = route?.params || {};
-  const [menuOptions, setMenuOptions] = React.useState([]);
+  const [menuOptions, setMenuOptions] = React.useState(menuOptionsData);
 
   //useEffect hook to run code on component mount
   useEffect(() => {
