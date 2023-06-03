@@ -32,8 +32,8 @@ export default function Login({ navigation }) {
 
   const { handleChange, handleSubmit, values } = useFormik({
     initialValues: {
-      email: '',
-      password: '',
+      email: 'igaimerca@gmail.com',
+      password: 'admin123',
     },
 
     onSubmit: async (values) => {

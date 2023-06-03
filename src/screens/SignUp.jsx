@@ -150,7 +150,7 @@ export default function SignUp({ navigation }) {
                 handleSubmit();
               }}
             >
-              <Text style={styles.buttonText}>proceed</Text>
+              <Text style={styles.buttonText}>Proceed</Text>
             </TouchableOpacity>
           </View>
 

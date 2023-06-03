@@ -5,7 +5,7 @@ import colors from '../util/colors';
 export default function DashboardScreen() {
     return (
         <View style={styles.container}>
-            <Text>Dashboard Screen</Text>
+        <Text>Dashboard Screen</Text>
         </View>
     );
 }
@@ -13,7 +13,7 @@ export default function DashboardScreen() {
 
 const styles = StyleSheet.create({
     container: {
-        // flex: 1,
+        flex: 1,
         height: '100%',
         width: '100%',
         backgroundColor: colors.default,
