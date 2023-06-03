@@ -5,7 +5,7 @@ import SearchScreen from '../../screens/Search';
 import { Text } from 'react-native';
 import colors from '../../util/colors';
 
-const Tab: any = createBottomTabNavigator();
+const Tab = createBottomTabNavigator();
 
 export default function TabNavigation() {
 

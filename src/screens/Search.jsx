@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View, Image } from "react-native";
+import { StyleSheet, Text, View, Image, Pressable } from "react-native";
 import { SearchBar } from "react-native-elements";
 import colors from "../util/colors";
 
@@ -43,7 +43,6 @@ export default function SearchScreen(props) {
 const styles = StyleSheet.create({
   bottomText: {
     fontSize: 20,
-    // fontWeight: 'bold',
     marginTop: 20,
   },
   container: {
@@ -51,8 +50,6 @@ const styles = StyleSheet.create({
     backgroundColor: colors.default,
     height: "100%",
     paddingTop: 100,
-    // width: '100%',
-    // display: "flex",
   },
   desc: {
     alignItems: "center",

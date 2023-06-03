@@ -29,7 +29,7 @@ export default function RestaurantMenu({ navigation, route }) {
   }, []);
 
   const { restaurant } = route?.params || {};
-  const [menuOptions, setMenuOptions] = React.useState<Array<any>>([]);
+  const [menuOptions, setMenuOptions] = React.useState([]);
 
   //useEffect hook to run code on component mount
   useEffect(() => {
@@ -50,7 +50,7 @@ export default function RestaurantMenu({ navigation, route }) {
     }
   }, [token]);
 
-  const selectMenu = (menu: Object) => {
+  const selectMenu = (menu) => {
     // navigate to the next screen
     navigation.navigate("RestaurantMenuCart", {
       menu: { ...menu, restaurant },

@@ -16,6 +16,7 @@ import { useEffect, useState } from 'react';
 import * as SecureStore from 'expo-secure-store';
 import { NavigationContainer } from '@react-navigation/native';
 import colors from '../../util/colors';
+import OrderTracking from '../../screens/OrderTracking';
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -23,7 +24,7 @@ const Stack = createStackNavigator();
 function HomeScreen() {
       return (
         <Tab.Navigator
-            initialRouteName="Home"
+            initialRouteName="Scan"
             screenOptions={{
                 tabBarHideOnKeyboard: true,
                 headerShown: false,
@@ -104,7 +105,7 @@ function HomeScreen() {
                     ),
                 }}
                 name="Clock"
-                component={SearchStack}
+                component={OrderTracking}
             />
 
             <Tab.Screen

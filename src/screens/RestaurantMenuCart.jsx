@@ -18,7 +18,7 @@ export default function RestaurantMenuCart({ navigation, route }) {
   const { params } = route;
   let menu = params.menu;
 
-  const [products, setProducts] = React.useState<Array<any>>([]);
+  const [products, setProducts] = React.useState([]);
 
   useEffect(() => {
     setProducts(menu.items.map((item) => ({ ...item, amount: 0 })));
@@ -38,7 +38,7 @@ export default function RestaurantMenuCart({ navigation, route }) {
       );
     }, 0) || 0 + " RWF";
 
-  const increment = (id: number) => {
+  const increment = (id) => {
     let newProducts = products.map((product) => {
       if (product.id === id) {
         product.amount++;
@@ -48,7 +48,7 @@ export default function RestaurantMenuCart({ navigation, route }) {
     setProducts(newProducts);
   };
 
-  const decrement = (id: number) => {
+  const decrement = (id) => {
     let newProducts = products.map((product) => {
       if (product.id === id) {
         if (product.amount > 0) product.amount--;

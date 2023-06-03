@@ -75,7 +75,7 @@ const NotificationStack = ({ navigation }) => {
 const SearchStack = ({ navigation }) => {
     return (
         <Stack.Navigator
-            initialRouteName="Search"
+        initialRouteName="Search"
             screenOptions={{
                 headerStyle: { backgroundColor: colors.green2 },
                 headerTintColor: colors.white,
